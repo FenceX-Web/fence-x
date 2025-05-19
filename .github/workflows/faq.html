@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FenceX - FAQ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="faq.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>FenceX</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="faq.html">FAQ</a>
+      <button><a href="login.html" class="primary-button">Login</a></button>
+    </nav>
+  </header>
+  <main>
+    <section class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="question" data-open="false">
+        <div class="question-header">
+          <h3>What is FenceX?</h3>
+          <button class="toggle-btn">+</button>
+        </div>
+        <div class="content">
+          <p>FenceX is an AI-powered virtual fencing coach designed to help foil fencers improve their skills through
+            smart analysis and tips.</p>
+        </div>
+      </div>
+      <div class="question" data-open="false">
+        <div class="question-header">
+          <h3>Who is it for?</h3>
+          <button class="toggle-btn">+</button>
+        </div>
+        <div class="content">
+          <p>Competitive foil fencers looking for strategy help, especially against tricky opponents like lefties!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 FenceX. All rights reserved.</p>
+  </footer>
+  <script>
+    document.querySelectorAll('.question').forEach(question => {
+      const button = question.querySelector('.toggle-btn');
+      const toggle = () => {
+        const isOpen = question.getAttribute('data-open') === 'true';
+        question.setAttribute('data-open', !isOpen);
+        question.classList.toggle('active');
+        button.textContent = isOpen ? '+' : '−';
+      };
+
+      question.querySelector('h3').addEventListener('click', toggle);
+      button.addEventListener('click', toggle);
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  .header {
+    background-color: #0b132b;
+    padding: 1.5rem 2rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    padding-right: 1rem;
+  }
+
+  nav a:hover {
+    color: #b9dffd;
+    text-decoration: underline;
+}
+
+  nav button {
+    border-radius: 0.5rem;
+    background-color: hsl(208, 82%, 68%);
+    font-weight: 600;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0.2rem 0.5rem;
+    border:rgba(0, 119, 204, 0.2);
+    padding-left: 0.01rem;
+  }
+
+  nav button:hover {
+    background-color: #298fe9;
+    box-shadow: 2px 4px 6px rgba(156, 187, 209, 0.2);
+    border: 1px solid #3a617f;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  main {
+    padding: 2rem 2rem;
+  }
+  
+  .faq h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .question {
+    margin-bottom: 1.5rem;
+  }
+  
+  .question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(201, 64%, 96%);
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .question-header:hover {
+    background-color: #d4eafd;
+    box-shadow: 0 2px 6px rgba(0, 119, 204, 0.2);
+    border: 1px solid #aad4f5;
+  }
+  
+  .question h3 {
+    font-size: 1.2rem;
+    color: #0077cc;
+  }
+  
+  .toggle-btn {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .toggle-btn:hover {
+    background-color: #005fa3;
+  }
+  
+  .question-header:active {
+    background-color: #c1dff8;
+  }
+  
+  .toggle-btn:active {
+    background-color: #004c85;
+    transform: scale(0.95);
+  }
+  
+  .content {
+    display: none;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    color: #444;
+    transition: max-height 0.3s ease;
+  }
+  
+  .question.active .content {
+    display: block;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1e1e2f;
+    color: white;
+    margin-top: 2rem;
+  }

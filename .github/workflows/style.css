@@ -1,0 +1,66 @@
+/* Global styles for FenceX website */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+header {
+  background-color: #0b132b;
+  padding: 1.5rem 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  padding-right: 1rem;
+}
+
+nav a:hover {
+  color: #aad4f5;
+  text-decoration: underline;
+}
+
+nav button, .primary-button {
+  border-radius: 0.5rem;
+  background-color: #0077cc;
+  color: white;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+nav button:hover, .primary-button:hover {
+  background-color: #005fa3;
+  box-shadow: 0 2px 6px rgba(0, 95, 163, 0.4);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1e1e2f;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Back link style for login page */
+.back-link {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  padding-right: 1rem;
+}
